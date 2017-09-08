@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/LunchButton"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/BreakfastButton"
+        android:layout_marginTop="23dp"
+        android:textAllCaps="false"
+        android:text="Lunch Menu (11:00 AM - 5:00 PM)"
+        android:textSize="14sp" />
+
+    <Button
+        android:id="@+id/BreakfastButton"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="Breakfast Menu (8:00 - 11:00 AM)"
+        android:textIsSelectable="false"
+        android:textSize="14sp"
+        android:textAllCaps="false"
+        android:layout_below="@+id/LogoutButton"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="18dp" />
+
+    <ImageView
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        app:srcCompat="@mipmap/cart"
+        android:layout_marginTop="27dp"
+        android:id="@+id/imageView"
+        android:layout_below="@+id/LunchButton"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/CheckoutButton"
+        android:layout_width="120sp"
+        android:layout_height="50sp"
+        android:background="@android:color/darker_gray"
+        android:backgroundTint="@android:color/background_light"
+        android:text="Checkout"
+        android:textSize="18sp"
+        android:layout_below="@+id/imageView"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/LogoutButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/holo_red_light"
+        android:text="Logout"
+        android:textAllCaps="false"
+        android:layout_marginTop="19dp"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/imageView"
+        android:layout_toEndOf="@+id/imageView" />
+
+</RelativeLayout>

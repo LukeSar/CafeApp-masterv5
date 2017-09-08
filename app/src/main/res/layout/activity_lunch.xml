@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="120dp"
+        android:layout_height="35dp"
+        android:text="Lunch Menu"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textSize="20sp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="12dp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="Tap to add item (Edit order at checkout)"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView2"
+        android:layout_marginLeft="19dp"
+        android:layout_marginStart="19dp"
+        android:layout_marginTop="17dp"
+        android:text="Food"
+        android:textColor="@android:color/black"
+        android:textColorHighlight="@android:color/black" />
+
+    <ImageButton
+        android:id="@+id/BackButton"
+        android:layout_width="70dp"
+        android:layout_height="60dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@android:color/transparent"
+        app:srcCompat="?attr/actionModeCloseDrawable" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Drinks"
+        android:textColor="@android:color/black"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/textView3"
+        android:layout_alignStart="@+id/textView3"
+        android:layout_marginBottom="28dp" />
+
+    <Button
+        android:id="@+id/GrilledChickenButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView3"
+        android:text="Grilled Chicken (2 Breasts)"
+        android:layout_alignRight="@+id/EscalopeChickenButton"
+        android:layout_alignEnd="@+id/EscalopeChickenButton" />
+
+    <Button
+        android:id="@+id/EscalopeChickenButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/GrilledChickenButton"
+        android:text="Chicken Escalope (2 Breasts)"
+        android:layout_alignRight="@+id/KebabButton"
+        android:layout_alignEnd="@+id/KebabButton" />
+
+    <Button
+        android:id="@+id/KebabButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/EscalopeChickenButton"
+        android:text="Chicken Kebab (1 Skewer Large)"
+        android:layout_alignRight="@+id/FishCakeButton"
+        android:layout_alignEnd="@+id/FishCakeButton" />
+
+    <Button
+        android:id="@+id/FishCakeButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/KebabButton"
+        android:text="Fish Cake"
+        android:layout_alignRight="@+id/SaladBoxButton"
+        android:layout_alignEnd="@+id/SaladBoxButton" />
+
+    <Button
+        android:id="@+id/SaladBoxButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/FishCakeButton"
+        android:text="Salad Box "
+        android:layout_alignRight="@+id/CiabattaButton"
+        android:layout_alignEnd="@+id/CiabattaButton" />
+
+    <Button
+        android:id="@+id/CiabattaButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add into Ciabatta Bread"
+        android:layout_below="@+id/SaladBoxButton"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/PastaButton"
+        android:layout_alignEnd="@+id/PastaButton" />
+
+    <Button
+        android:id="@+id/PastaButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/CiabattaButton"
+        android:text="Pasta Box (Tomato and Beef)" />
+</RelativeLayout>
